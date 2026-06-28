@@ -1,32 +1,47 @@
 import React from 'react';
 
 export default function Qualifications() {
+  const credentials = [
+    { title: 'Advanced First Aid', subtitle: 'Red Cross Certified', desc: 'Comprehensive emergency response training.' },
+    { title: 'CPR & AED', subtitle: 'AHA Certified', desc: 'Elite cardiac life support readiness.' },
+    { title: 'CMT Certification', subtitle: 'State Board Cleared', desc: 'Flawless medication administration protocols.' },
+    { title: 'Dementia Care', subtitle: 'Specialized Training', desc: 'Advanced cognitive empathy and routing.' }
+  ];
+
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-blue-50 rounded-3xl p-8 md:p-12">
-          <div className="md:w-1/3 space-y-3 text-center md:text-left">
-            <h3 className="text-2xl font-bold text-gray-900">Highly Trained Professionals</h3>
-            <p className="text-gray-600">Your loved ones are in capable, medically certified hands.</p>
-          </div>
-          
-          <div className="md:w-2/3 flex flex-wrap justify-center md:justify-end gap-4 lg:gap-8">
-            {[
-              { cert: 'First Aid Certified' },
-              { cert: 'CPR Certified' },
-              { cert: 'CMT Certified' },
-            ].map((badge, index) => (
-              <div key={index} className="flex items-center gap-3 bg-white px-6 py-4 rounded-full shadow-sm border border-blue-100">
-                <div className="bg-green-100 p-2 rounded-full">
-                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+    <section className="py-24 bg-[#EBEBE8] text-gray-900 border-t border-gray-300 overflow-hidden">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tighter">
+            Anatomy of an <br />
+            <span className="font-serif italic font-medium text-blue-900">Elite Caregiver</span>
+          </h2>
+          <p className="text-gray-600 font-light max-w-sm md:text-right text-lg">
+            Beyond background checks. We mandate continuous, rigorous clinical certifications.
+          </p>
+        </div>
+
+        {/* Horizontal Scrolling/Staggered Dossier Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {credentials.map((cred, i) => (
+            <div key={i} className="group bg-[#F4F4F0] p-8 rounded-2xl border border-gray-300 hover:bg-white hover:border-blue-900/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+              <div className="flex justify-between items-start mb-12">
+                <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:border-blue-900 group-hover:bg-blue-50 transition-colors">
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <span className="font-bold text-gray-800">{badge.cert}</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">0{i + 1}</span>
               </div>
-            ))}
-          </div>
+              
+              <h4 className="text-sm font-bold uppercase tracking-widest text-blue-900 mb-1">{cred.subtitle}</h4>
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 mb-3">{cred.title}</h3>
+              <p className="text-gray-500 font-light text-sm">{cred.desc}</p>
+            </div>
+          ))}
         </div>
+
       </div>
     </section>
   );
