@@ -59,12 +59,7 @@ export default function Hero() {
           
           {/* Left Column: High-End Typography */}
           <div className="space-y-8 pb-8">
-            <div className="inline-flex items-center gap-4 bg-white/50 backdrop-blur-md px-5 py-2.5 rounded-full border border-blue-900/10 shadow-sm">
-              <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></div>
-              <span className="text-xs font-bold tracking-[0.25em] uppercase text-blue-950">
-                Redefining Care Standards
-              </span>
-            </div>
+          
 
             {/* Editorial Heading with Stroke Effect */}
             <h1 className="text-[4.5rem] sm:text-[6rem] lg:text-[8rem] font-extrabold leading-[0.85] tracking-tighter text-gray-900">
