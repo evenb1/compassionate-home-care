@@ -26,7 +26,7 @@ export default function AboutPage() {
             <div className="relative space-y-8 lg:sticky lg:top-36">
               <div className="relative aspect-[3/4] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/founder1.jpg"
+                  src="/founder.jpg"
                   alt="Claudette Rowe, Founder of Compassionate Home Care"
                   className="w-full h-full object-contain rounded-3xl"
                 />
