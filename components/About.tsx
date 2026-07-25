@@ -10,18 +10,18 @@ export default function About() {
 
           {/* Left Side: Portrait & Name Tag */}
           <div className="relative space-y-8 lg:sticky lg:top-36">
-            <div className="relative aspect-[3/4] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl bg-transparent group">
+            <div className="relative aspect-[3/4] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl group">
               <img
-                src="/founder1.png"
+                src="/founder1.jpg"
                 alt="Claudette Rowe, Founder of Compassionate Home Care"
-                className="w-full h-full object-contain rounded-3xl"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-blue-950/10 mix-blend-multiply"></div>
             </div>
 
             <div className="text-center lg:text-left pl-4">
               <p className="font-serif text-2xl italic text-blue-900">Claudette Rowe</p>
-              <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mt-1">Founder & Director</p>
+              <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mt-1">Founder &amp; Director</p>
             </div>
           </div>
 
@@ -37,14 +37,13 @@ export default function About() {
               </h2>
             </div>
 
-            {/* Pull Quote */}
             <p className="text-2xl sm:text-3xl font-serif italic text-gray-700 border-l-4 border-blue-900 pl-6 py-2 leading-relaxed">
-              "Caregiving is more than completing daily tasks — it's about treating people with dignity, respect, kindness, and love."
+              "Caregiving is more than completing daily tasks. It is about treating people with dignity, respect, kindness, and love."
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 text-lg text-gray-600 font-light leading-relaxed">
               <p>
-                At just eight years old, Claudette became one of the people helping care for her grandmother. Even as a child, she understood that her grandmother needed love, patience, and someone by her side — comforting her, helping in the small ways she could, and simply being present.
+                At just eight years old, Claudette became one of the people helping care for her grandmother. Even as a child, she understood that her grandmother needed love, patience, and someone by her side, comforting her, helping in the small ways she could, and simply being present.
               </p>
               <p>
                 One day, her grandmother passed away in her arms. That moment changed her life forever. Though only a child, she experienced both the pain of loss and the profound importance of compassionate care during a person's final moments.
@@ -53,7 +52,7 @@ export default function About() {
 
             <div className="text-lg text-gray-600 font-light leading-relaxed">
               <p>
-                As she grew older, she carried that experience with her — and it became the foundation of her purpose. It inspired her to pursue a career in caregiving and eventually to open Compassionate Home Care, with a mission to provide high-quality care that allows seniors and individuals with disabilities to remain comfortable in their own homes while maintaining their independence.
+                As she grew older, she carried that experience with her and it became the foundation of her purpose. It inspired her to pursue a career in caregiving and eventually to open Compassionate Home Care, with a mission to provide high-quality care that allows seniors and individuals with disabilities to remain comfortable in their own homes while maintaining their independence.
               </p>
             </div>
 
@@ -64,7 +63,7 @@ export default function About() {
               </div>
               <p className="text-gray-700 text-base leading-relaxed">
                 <strong className="text-gray-900 block font-bold mb-1 text-lg">Her Grandmother's Legacy</strong>
-                Every client she serves reminds her of her grandmother. Her business is built on empathy, trust, integrity, and the belief that everyone deserves to age with dignity and compassion. Opening Compassionate Home Care is more than a professional goal — it is fulfilling a promise she made to herself as a little girl.
+                Every client she serves reminds her of her grandmother. Her business is built on empathy, trust, integrity, and the belief that everyone deserves to age with dignity and compassion. Opening Compassionate Home Care is more than a professional goal. It is fulfilling a promise she made to herself as a little girl.
               </p>
             </div>
 

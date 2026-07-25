@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Testimonials() {
   return (
-    <section className="py-32 bg-[#F9F9F8] text-gray-900 relative">
+    <section id="testimonials" className="py-32 bg-[#F9F9F8] text-gray-900 relative">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
@@ -17,7 +17,6 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           
-          {/* Review 1: Shifted up */}
           <div className="bg-white p-10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 lg:-translate-y-8">
             <div className="text-6xl text-blue-100 font-serif leading-none h-8">"</div>
             <p className="text-lg text-gray-700 font-light leading-relaxed mb-8 italic">
@@ -32,7 +31,6 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Review 2: Centered */}
           <div className="bg-blue-950 text-white p-10 rounded-3xl shadow-[0_20px_50px_rgba(30,58,138,0.2)] lg:translate-y-8">
             <div className="text-6xl text-blue-800 font-serif leading-none h-8">"</div>
             <p className="text-lg text-blue-50 font-light leading-relaxed mb-8 italic">
@@ -47,11 +45,10 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Review 3: Shifted up */}
           <div className="bg-white p-10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100 lg:-translate-y-4">
             <div className="text-6xl text-blue-100 font-serif leading-none h-8">"</div>
             <p className="text-lg text-gray-700 font-light leading-relaxed mb-8 italic">
-              When my husband’s dementia advanced, we were overwhelmed. The specialized care team didn't just manage his symptoms; they preserved his dignity. I sleep peacefully knowing he is safe.
+              When my husband's dementia advanced, we were overwhelmed. The specialized care team didn't just manage his symptoms; they preserved his dignity. I sleep peacefully knowing he is safe.
             </p>
             <div className="flex items-center gap-4">
               <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=150&auto=format&fit=crop" alt="Client" className="w-12 h-12 rounded-full object-cover grayscale" />
