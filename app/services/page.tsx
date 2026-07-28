@@ -44,15 +44,17 @@ export default function ServicesPage() {
   return (
     <main className="bg-white text-gray-900">
 
-      <section className="relative pt-48 pb-24 bg-[#F4F4F0] overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E3A8A0F_1px,transparent_1px),linear-gradient(to_bottom,#1E3A8A0F_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      <section className="relative pt-48 pb-24 bg-blue-950 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div className="absolute top-[-20%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-blue-600/30 blur-[120px]"></div>
+        <div className="absolute bottom-[-20%] left-[-5%] w-[35vw] h-[35vw] rounded-full bg-blue-400/20 blur-[100px]"></div>
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-900 block mb-4">What We Offer</span>
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl">
+          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-300 block mb-4">What We Offer</span>
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl text-white">
             Care Services <br />
-            <span className="font-serif italic font-medium text-blue-900">Built Around Your Loved One.</span>
+            <span className="font-serif italic font-medium text-blue-300">Built Around Your Loved One.</span>
           </h1>
-          <p className="mt-8 text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
+          <p className="mt-8 text-xl text-blue-100/70 font-light max-w-2xl leading-relaxed">
             Every service we offer is delivered with the same standard, treating your family member with the dignity, respect, and warmth they deserve.
           </p>
         </div>

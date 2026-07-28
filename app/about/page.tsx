@@ -6,14 +6,19 @@ export default function AboutPage() {
     <main className="bg-white text-gray-900">
 
       {/* Hero */}
-      <section className="relative pt-48 pb-24 bg-[#F4F4F0] overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E3A8A0F_1px,transparent_1px),linear-gradient(to_bottom,#1E3A8A0F_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      <section className="relative pt-48 pb-24 bg-blue-950 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div className="absolute top-[-20%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-blue-700/30 blur-[120px]"></div>
+        <div className="absolute bottom-[-20%] left-[-5%] w-[35vw] h-[35vw] rounded-full bg-blue-400/20 blur-[100px]"></div>
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-900 block mb-4">Our Story</span>
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl">
+          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-300 block mb-4">Our Story</span>
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl text-white">
             A Promise Made <br />
-            <span className="font-serif italic font-medium text-blue-900">at Eight Years Old.</span>
+            <span className="font-serif italic font-medium text-blue-300">at Eight Years Old.</span>
           </h1>
+          <p className="mt-8 text-xl text-blue-100/70 font-light max-w-2xl leading-relaxed">
+            The story behind Compassionate Nurturing Home Care and the woman who built it.
+          </p>
         </div>
       </section>
 
@@ -22,26 +27,24 @@ export default function AboutPage() {
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-16 lg:gap-24 items-start">
 
-            {/* Left: Portrait */}
             <div className="relative space-y-8 lg:sticky lg:top-36">
-              <div className="relative aspect-[3/4] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[3/4] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl group">
                 <img
-                  src="/founder.jpg"
-                  alt="Claudette Rowe, Founder of Compassionate Home Care"
-                  className="w-full h-full object-contain rounded-3xl"
+                  src="/founder1.jpg"
+                  alt="Claudette Rowe, Founder of Compassionate Nurturing Home Care"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-blue-950/10 mix-blend-multiply"></div>
               </div>
               <div className="text-center lg:text-left pl-4">
                 <p className="font-serif text-2xl italic text-blue-900">Claudette Rowe</p>
-                <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mt-1">Founder & Director</p>
+                <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mt-1">Founder &amp; Director</p>
               </div>
             </div>
 
-            {/* Right: Full Story */}
             <div className="space-y-12 lg:pl-12">
               <p className="text-2xl sm:text-3xl font-serif italic text-gray-700 border-l-4 border-blue-900 pl-6 py-2 leading-relaxed">
-                "Caregiving is more than completing daily tasks — it's about treating people with dignity, respect, kindness, and love."
+                "Caregiving is more than completing daily tasks. It is about treating people with dignity, respect, kindness, and love."
               </p>
 
               <div className="space-y-8 text-lg text-gray-600 font-light leading-relaxed">
@@ -52,34 +55,32 @@ export default function AboutPage() {
                   One day, my grandmother passed away in my arms. That moment changed my life forever. Although I was only a child, I experienced the pain of losing someone I loved while also realizing how important compassionate care is during a person's final moments.
                 </p>
                 <p>
-                  As I grew older, I carried that experience with me. It taught me that caregiving is more than completing daily tasks — it's about treating people with dignity, respect, kindness, and love. Families deserve to know that their loved ones are safe, cared for, and never alone.
+                  As I grew older, I carried that experience with me. It taught me that caregiving is more than completing daily tasks. It is about treating people with dignity, respect, kindness, and love. Families deserve to know that their loved ones are safe, cared for, and never alone.
                 </p>
                 <p>
-                  That childhood experience became the foundation of my purpose. It inspired me to pursue a career in caregiving and eventually motivated me to open my own home care business. My mission is to provide high-quality, compassionate care that allows seniors and individuals with disabilities to remain comfortable in their own homes while maintaining their independence.
+                  That childhood experience became the foundation of my purpose. It inspired me to pursue a career in caregiving and eventually motivated me to open Compassionate Nurturing Home Care. My mission is to provide high-quality, compassionate care that allows seniors and individuals with disabilities to remain comfortable in their own homes while maintaining their independence.
                 </p>
                 <p>
                   Every client I serve reminds me of my grandmother. I strive to care for each person as if they were a member of my own family. My business is built on empathy, trust, integrity, and the belief that everyone deserves to age with dignity and compassion.
                 </p>
                 <p>
-                  Opening Compassionate Home Care is more than achieving a professional goal — it is fulfilling a promise I made to myself as a little girl. My grandmother's memory continues to inspire me every day, and through my work, her legacy of love and compassion lives on.
+                  Opening Compassionate Nurturing Home Care is more than achieving a professional goal. It is fulfilling a promise I made to myself as a little girl. My grandmother's memory continues to inspire me every day, and through my work, her legacy of love and compassion lives on.
                 </p>
               </div>
 
-              {/* Mission Card */}
               <div className="bg-[#F4F4F0] p-8 sm:p-12 rounded-3xl border border-gray-200 grid sm:grid-cols-[auto_1fr] gap-6 items-center">
                 <div className="w-16 h-16 rounded-full bg-blue-900 text-white flex items-center justify-center text-2xl shadow-md">♥</div>
                 <p className="text-gray-700 text-base leading-relaxed">
                   <strong className="text-gray-900 block font-bold mb-1 text-lg">Our Mission</strong>
-                  To provide high-quality, compassionate home care that allows seniors and individuals with disabilities to remain comfortable in their own homes — treated always with dignity, respect, and love.
+                  To provide high-quality, compassionate home care that allows seniors and individuals with disabilities to remain comfortable in their own homes, treated always with dignity, respect, and love.
                 </p>
               </div>
 
-              {/* Values Grid */}
               <div className="grid sm:grid-cols-2 gap-6 pt-4">
                 {[
                   { title: 'Empathy', desc: 'We lead with heart in every interaction, understanding that behind every care request is a family that loves someone deeply.' },
                   { title: 'Trust', desc: 'We earn the confidence of families by showing up consistently, communicating openly, and always doing what we say.' },
-                  { title: 'Integrity', desc: 'We hold ourselves to the highest ethical standards — in how we hire, how we care, and how we operate.' },
+                  { title: 'Integrity', desc: 'We hold ourselves to the highest ethical standards in how we hire, how we care, and how we operate.' },
                   { title: 'Dignity', desc: 'Every person in our care is treated as a full human being deserving of respect, privacy, and grace.' },
                 ].map((val, i) => (
                   <div key={i} className="p-6 rounded-2xl border border-gray-200 hover:border-blue-900/30 hover:shadow-md transition-all duration-300">
@@ -89,7 +90,7 @@ export default function AboutPage() {
                 ))}
               </div>
 
-              <Link href="#contact" className="inline-flex items-center gap-3 bg-blue-900 text-white px-10 py-5 rounded-full text-sm font-bold tracking-widest uppercase hover:bg-blue-800 transition-colors shadow-lg">
+              <Link href="/contact" className="inline-flex items-center gap-3 bg-blue-900 text-white px-10 py-5 rounded-full text-sm font-bold tracking-widest uppercase hover:bg-blue-800 transition-colors shadow-lg">
                 Get In Touch
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -5,15 +5,17 @@ export default function QualificationsPage() {
   return (
     <main className="bg-white text-gray-900">
 
-      <section className="relative pt-48 pb-24 bg-[#F4F4F0] overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E3A8A0F_1px,transparent_1px),linear-gradient(to_bottom,#1E3A8A0F_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+      <section className="relative pt-48 pb-24 bg-blue-950 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div className="absolute top-[-20%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-blue-600/30 blur-[120px]"></div>
+        <div className="absolute bottom-[-20%] left-[-5%] w-[35vw] h-[35vw] rounded-full bg-blue-400/20 blur-[100px]"></div>
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-900 block mb-4">Our Standards</span>
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl">
+          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-300 block mb-4">Our Standards</span>
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] max-w-4xl text-white">
             Caregiver <br />
-            <span className="font-serif italic font-medium text-blue-900">Qualifications.</span>
+            <span className="font-serif italic font-medium text-blue-300">Qualifications.</span>
           </h1>
-          <p className="mt-8 text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
+          <p className="mt-8 text-xl text-blue-100/70 font-light max-w-2xl leading-relaxed">
             Every caregiver we place meets rigorous certification and training standards. Because your loved one deserves someone truly qualified to care for them.
           </p>
         </div>
@@ -48,6 +50,24 @@ export default function QualificationsPage() {
                 cert: 'Certified Medication Technician',
                 desc: 'Medication errors are one of the leading causes of hospitalizations among seniors. Our CMT-certified caregivers are trained to manage medication schedules with precision, accuracy, and full compliance.',
                 includes: ['Medication scheduling and reminders', 'Dosage accuracy and verification', 'Adverse reaction awareness', 'Documentation and record keeping'],
+              },
+              {
+                title: 'CNA Certification',
+                cert: 'Certified Nursing Assistant',
+                desc: 'Our CNA-certified caregivers bring hands-on clinical training in patient care, personal hygiene assistance, and vital sign monitoring to every home they serve.',
+                includes: ['Patient care and hygiene', 'Vital sign monitoring', 'Mobility and transfer assistance', 'Clinical documentation'],
+              },
+              {
+                title: 'CRN Certification',
+                cert: 'Certified Registered Nurse',
+                desc: 'With registered nursing qualifications, our CRN staff bring advanced clinical knowledge and the ability to manage complex care needs with professionalism and precision.',
+                includes: ['Advanced patient assessment', 'Wound and post-op care', 'Care plan development', 'Patient and family education'],
+              },
+              {
+                title: 'CNP Certification',
+                cert: 'Certified Nurse Practitioner',
+                desc: 'Our CNP-certified staff provide expert-level medical oversight, comprehensive care planning, and the ability to manage complex health conditions with the highest level of clinical expertise.',
+                includes: ['Comprehensive health assessments', 'Chronic disease management', 'Medication prescribing support', 'Coordinated care planning'],
               },
             ].map((cred, i) => (
               <div key={i} className="bg-[#F4F4F0] rounded-3xl p-10 space-y-6 border border-gray-200 hover:border-blue-900/20 hover:shadow-lg transition-all duration-300">
@@ -93,6 +113,8 @@ export default function QualificationsPage() {
                   'Valid First Aid certification (Red Cross or equivalent)',
                   'Current CPR and AED certification (AHA preferred)',
                   'CMT (Certified Medication Technician) certification',
+                  'CNA (Certified Nursing Assistant) certification',
+                  'CRN or CNP certification (preferred but not required)',
                   'Compassionate, patient, and reliable character',
                   'Background check clearance',
                 ].map((req, i) => (

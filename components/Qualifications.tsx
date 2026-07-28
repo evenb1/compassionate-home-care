@@ -5,6 +5,9 @@ export default function Qualifications() {
     { title: 'First Aid Training', subtitle: 'Red Cross Certified', desc: 'Comprehensive emergency response training to handle urgent situations with confidence and calm.' },
     { title: 'CPR & AED', subtitle: 'AHA Certified', desc: 'Full cardiac life support readiness ensuring our caregivers are prepared for any critical moment.' },
     { title: 'CMT Certification', subtitle: 'Certified Medication Technician', desc: 'Rigorous medication administration protocols ensuring accuracy, safety, and peace of mind.' },
+    { title: 'CNA Certification', subtitle: 'Certified Nursing Assistant', desc: 'Hands-on clinical training in patient care, hygiene assistance, and vital sign monitoring.' },
+    { title: 'CRN Certification', subtitle: 'Certified Registered Nurse', desc: 'Advanced nursing qualifications ensuring the highest level of clinical care and patient support.' },
+    { title: 'CNP Certification', subtitle: 'Certified Nurse Practitioner', desc: 'Expert-level medical oversight providing comprehensive care planning and health management.' },
   ];
 
   return (
